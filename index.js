@@ -7,7 +7,7 @@ if(process.argv[2] !== "false" && typeof process.argv[2] !== 'undefined') {
 var reversed = process.argv[3] === "false" ? false: true;
 
 var options = {
-    api_key: 'REPLACE-ME',
+    api_key: '13a2aa15749158f4c3a95835ef11b737',
     snippet: true,
     language: 'en'
   };

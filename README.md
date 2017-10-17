@@ -18,10 +18,10 @@ Example (fixed length with default reversal)
 node index.js 5
 ```
 
-Example (fixed length with set reversal)
+Example (fixed length with set to no reversal)
 
 ```
-node index.js 5 true
+node index.js 5 false
 ```
 
 Example (variable length with set to no reversal)
