@@ -22,3 +22,10 @@ Example (fixed length with set to no reversal)
 
 ```
 node index.js 5 false
+```
+
+Example (variable length with set to no reversal)
+
+```
+node index.js false false
+```
