@@ -1,8 +1,11 @@
 {
-  "name": "epic-name-generator",
+  "name": "name-inspiration-generator",
   "version": "1.0.0",
-  "description": "Generates random names for people, places and things.",
+  "description": "Generates random name inspirations for people, places and things.",
   "main": "index.js",
+  "bin": {
+    "inspireme": "bin/inspireme.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +13,7 @@
     "name",
     "generator"
   ],
-  "author": "Justin Lonas",
+  "author": "Justin Lonas <sdwrage@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "rnd-song": "^1.0.2"

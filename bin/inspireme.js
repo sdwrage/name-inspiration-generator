@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var rndSong = require('rnd-song');
 
 var nameLength = Math.floor((Math.random() * 12) + 6);
@@ -7,8 +9,7 @@ if(process.argv[2] !== "false" && typeof process.argv[2] !== 'undefined') {
 var reversed = process.argv[3] === "false" ? false: true;
 
 var options = {
-
-    api_key: 'REPLACE-ME',
+    api_key: 'CHANGE-ME',
     snippet: true,
     language: 'en'
   };
