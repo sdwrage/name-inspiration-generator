@@ -9,7 +9,11 @@ if(process.argv[2] !== "false" && typeof process.argv[2] !== 'undefined') {
 var reversed = process.argv[3] === "false" ? false: true;
 
 var options = {
+<<<<<<< HEAD:bin/inspireme.js
     api_key: 'CHANGE-ME',
+=======
+    api_key: 'REPLACE-ME',
+>>>>>>> d34e4b562e428c5ae73b022a97d8914648c22c7f:index.js
     snippet: true,
     language: 'en'
   };
