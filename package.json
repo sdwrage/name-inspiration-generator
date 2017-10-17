@@ -1,0 +1,18 @@
+{
+  "name": "epic-name-generator",
+  "version": "1.0.0",
+  "description": "Generates random names for people, places and things.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "name",
+    "generator"
+  ],
+  "author": "Justin Lonas",
+  "license": "MIT",
+  "dependencies": {
+    "rnd-song": "^1.0.2"
+  }
+}
