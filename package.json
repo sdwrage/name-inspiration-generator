@@ -7,6 +7,10 @@
     "inspireme": "bin/inspireme.js",
     "inspireme-addkey": "bin/addkey.js"
   },
+  "repository" :
+  { "type" : "git", 
+    "url" : "https://github.com/sdwrage/name-inspiration-generator.git"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
