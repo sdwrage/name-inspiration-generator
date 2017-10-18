@@ -1,6 +1,6 @@
 {
   "name": "name-inspiration-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generates random name inspirations for people, places and things.",
   "main": "index.js",
   "bin": {
