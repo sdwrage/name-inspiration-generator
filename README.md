@@ -12,6 +12,14 @@ You can pass true or false into each of these arguments if you need to specify t
 npm install -g name-inspiration-generator
 ```
 
+**Set Your API Key**
+
+This will create a file in your home directory called .inspireme-key. If you remove this, you will have to set your API key again.
+
+```
+inspireme-setkey ACOOLKEYGOESRIGHTHERE
+```
+
 **Usage**
 
 Example (variable length with default reversal)
