@@ -1,15 +1,15 @@
 {
   "name": "name-inspiration-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generates random name inspirations for people, places and things.",
   "main": "index.js",
   "bin": {
     "inspireme": "bin/inspireme.js",
     "inspireme-addkey": "bin/addkey.js"
   },
-  "repository" :
-  { "type" : "git", 
-    "url" : "https://github.com/sdwrage/name-inspiration-generator.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdwrage/name-inspiration-generator.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
