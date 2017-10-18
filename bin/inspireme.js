@@ -1,20 +1,33 @@
 #! /usr/bin/env node
 
 var rndSong = require('rnd-song');
+var yargs = require('yargs').argv;
+var fs = require('fs');
 
 var nameLength = Math.floor((Math.random() * 12) + 6);
-if(process.argv[2] !== "false" && typeof process.argv[2] !== 'undefined') {
-    nameLength = parseInt(process.argv[2])
-};   
-var reversed = process.argv[3] === "false" ? false: true;
+var home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+var path = home + "/.inspireme-key";
 
+if(yargs.wordcount > 0) {
+    nameLength = parseInt(yargs.wordcount);
+}
+
+var apikey = '';
+if (fs.existsSync(path)) {
+    apikey = fs.readFileSync(path, 'utf8');
+} else {
+    console.log("You need to set your API key with the command: inspireme-addkey ADDYOURKEYHERE");
+    process.exit(1);
+}
+
+var reversed = yargs.reversed;
 var options = {
-    api_key: 'CHANGE-ME',
+    api_key: apikey,
     snippet: true,
     language: 'en'
   };
    
-  rndSong(options, function(err, res) {
+rndSong(options, function(err, res) {
     if (!err) {
       var snippet = res.snippet.snippet_body;
       snippet = snippet.replace(/[^a-zA-Z]/g, "").toLowerCase();

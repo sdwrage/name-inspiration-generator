@@ -4,7 +4,8 @@
   "description": "Generates random name inspirations for people, places and things.",
   "main": "index.js",
   "bin": {
-    "inspireme": "bin/inspireme.js"
+    "inspireme": "bin/inspireme.js",
+    "inspireme-addkey": "bin/addkey.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +17,7 @@
   "author": "Justin Lonas <sdwrage@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "rnd-song": "^1.0.2"
+    "rnd-song": "^1.0.2",
+    "yargs": "^9.0.1"
   }
 }
