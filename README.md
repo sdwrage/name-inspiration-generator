@@ -22,26 +22,20 @@ inspireme-setkey ACOOLKEYGOESRIGHTHERE
 
 **Usage**
 
-Example (variable length with default reversal)
+Example (variable length with no reversal)
 
 ```
 inspireme
 ```
 
-Example (fixed length with default reversal)
-
-```
-inspireme 5
-```
-
 Example (fixed length with set to no reversal)
 
 ```
-inspireme 5 false
+inspireme --wordcount 8
 ```
 
-Example (variable length with set to no reversal)
+Example (fixed length with reversal)
 
 ```
-inspireme false false
+inspireme --wordcount 5 --reversed
 ```
