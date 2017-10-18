@@ -4,6 +4,9 @@ A name inspiration generator based off of random song lyric snippets.
 
 To start using this program, you will need to have Node.js installed and have a developer.musixmatch.com API key (https://developer.musixmatch.com).
 
+**Original inspiration for the app**
+https://www.reddit.com/r/worldbuilding/comments/76rkwp/naming_technique/
+
 **Installation**
 
 ```
