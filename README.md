@@ -18,7 +18,7 @@ npm install -g name-inspiration-generator
 This will create a file in your home directory called .inspireme-key. If you remove this, you will have to set your API key again.
 
 ```
-inspireme-setkey ACOOLKEYGOESRIGHTHERE
+inspireme-addkey ACOOLKEYGOESRIGHTHERE
 ```
 
 **Usage**
