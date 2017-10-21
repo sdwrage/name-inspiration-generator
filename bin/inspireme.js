@@ -1,12 +1,12 @@
 #! /usr/bin/env node
 
 const fs = require('fs');
+const getHomePath = require('home-path');
 const rndSong = require('rnd-song');
 const yargs = require('yargs').argv;
 
 const nameLength = Math.floor((Math.random() * 12) + 6);
-const home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
-const path = home + '/.inspireme-key';
+const path = getHomePath() + '/.inspireme-key';
 
 if (yargs.wordcount > 0) {
   nameLength = parseInt(yargs.wordcount);
