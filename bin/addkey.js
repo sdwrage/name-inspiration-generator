@@ -1,11 +1,10 @@
 #! /usr/bin/env node
 
 const fs = require('fs');
+const getHomePath = require('home-path');
 const argv = require('yargs').argv;
 
-const homePath = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
-
-const keyPath = homePath + '/.inspireme-key';
+const keyPath = getHomePath() + '/.inspireme-key';
 
 if ('undefined' === typeof argv.key) {
   console.log('Please provide a key, like this: inspireme-addkey --key ACOOLKEYGOESRIGHTHERE');
