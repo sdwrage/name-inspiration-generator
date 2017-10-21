@@ -5,7 +5,7 @@ const getHomePath = require('home-path');
 const rndSong = require('rnd-song');
 const yargs = require('yargs').argv;
 
-const nameLength = Math.floor((Math.random() * 12) + 6);
+let nameLength = Math.floor((Math.random() * 12) + 6);
 const path = getHomePath() + '/.inspireme-key';
 
 if (yargs.wordcount > 0) {
@@ -20,7 +20,8 @@ if (fs.existsSync(path)) {
   process.exit(1);
 }
 
-const reversed = yargs.reversed;
+let reversed = yargs.reversed;
+
 const options = {
   api_key: apikey,
   snippet: true,
