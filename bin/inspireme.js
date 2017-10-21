@@ -21,6 +21,7 @@ if (fs.existsSync(path)) {
 }
 
 let reversed = yargs.reversed;
+
 const options = {
   api_key: apikey,
   snippet: true,
