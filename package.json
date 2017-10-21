@@ -21,6 +21,7 @@
   "author": "Justin Lonas <sdwrage@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "home-path": "^1.0.5",
     "rnd-song": "^1.0.2",
     "yargs": "^9.0.1"
   }
