@@ -1,13 +1,22 @@
 #! /usr/bin/env node
 
-var fs = require('fs');
+const fs = require('fs');
+const argv = require('yargs').argv;
 
-var home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+const homePath = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
 
-fs.writeFile(home + "/.inspireme-key", process.argv[2], function(err) {
-    if(err) {
-        return console.log(err);
+const keyPath = homePath + '/.inspireme-key';
+
+if ('undefined' === typeof argv.key) {
+  console.log('Please provide a key, like this: inspireme-addkey --key ACOOLKEYGOESRIGHTHERE');
+  process.exit(1);
+} else {
+  fs.writeFile(keyPath, argv.key, err => {
+    if (err) {
+      console.log(err);
+      process.exit(1);
     }
 
-    console.log("Your API key has been set!");
-}); 
+    console.log(`API key written to: ${keyPath}`);
+  });
+}
